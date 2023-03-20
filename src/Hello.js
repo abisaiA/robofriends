@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import './Hello.css';
-class Hello extends Component {
-    render(){
-        return(
-            <div className='f1 tc'>
+
+const Hello = (props) => {
+    return(
+        <div className='f1 tc'>
             <h1>Hello world</h1>
             <p>Welcome to react</p>
+            <p>{props.greeting}</p>
         </div> 
-        )
-        
-    }
+    );
 }
 
 export default Hello;
